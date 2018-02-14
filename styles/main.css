@@ -1,4 +1,5 @@
 @import url("normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab|Slabo+27px');
 html {
   font-size: 0.625em;
 }
@@ -23,6 +24,7 @@ body {
 
 .main-title {
   font-size: 3rem;
+  font-family: 'Open Sans', 'Slabo 27px', serif, sans-serif;
 }
 
 .site-navigation ul {
@@ -37,4 +39,5 @@ body {
   padding: 0.5em;
   margin: 0 5%;
   box-shadow: 5px 3px rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto Slab', serif;
 }
