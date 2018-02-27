@@ -1,0 +1,39 @@
+body :
+(@import url'https://fonts.googleapis.com/css?family=Cookie|Roboto') font-size: 1.6rem
+
+logo:  font-family: 'Cookie', cursive;
+
+float:left;
+
+
+
+
+h1 
+{ font-size: 2.6rem
+
+text-aligne : center 
+font-style : normal}
+
+
+
+h2, h3 { font-sitze :2rem;
+
+font-famile: roboto 
+
+float:left ;
+
+}
+
+p{ font-size: 1.6;
+
+img {
+margin : auto;}
+
+
+
+
+
+
+
+
+
