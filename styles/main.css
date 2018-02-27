@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Roboto');
 html {
   font-size: 0.625em;
 }
@@ -12,32 +12,193 @@ body {
   font-size: 1.6rem;
 }
 
-.wrapper {
+/** all body */
+
+.all-culomn {
+  width: 80%;
   margin: auto;
-  width: 90vw;
 }
+
+/* header with logo */
 
 .site-header {
-  padding-top: 5%;
-  height: 100vh;
+  width: 100%;
+  background: linear-gradient(darkred 20%, black 80px);
+  box-shadow: -1px 5px 3px rgba(0, 0, 0, 0.3);
+  height: 8vh;
 }
 
-.main-title {
-  font-size: 3rem;
-  font-family: 'Open Sans', 'Slabo 27px', serif, sans-serif;
+.img-about {
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.site-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.logo {
+  float: left;
+  height: 2vh;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
+  font-family: 'Cookie', cursive;
+  margin: 1% 2%;
 }
 
-.site-navigation li {
+.site-navigation {
+  float: right;
+  margin: -1% 2%;
+}
+
+.site-navigation ul li {
   display: inline-block;
-  border: 1px solid;
-  padding: 0.5em;
-  margin: 0 5%;
-  box-shadow: 5px 3px rgba(0, 0, 0, 0.5);
-  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  padding: 15px 15px;
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+.site-navigation li:hover {
+  background: black;
+  border-radius: 10px 10px;
+}
+
+.site-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+/* finish this header with logo */
+
+/* main main the body  */
+
+.contener {
+  min-height: calc(100vh - 60px);
+}
+
+/*------*/
+
+/* footer */
+
+.min-footer {
+  background: linear-gradient(darkred 20%, black 80px);
+  box-shadow: -1px 5px 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  height: 5vh;
+}
+
+.min-footer p {
+  padding: 4px 0;
+}
+
+/*-----*/
+
+/* bage about---
+*
+*
+ imag in about with the list and p */
+
+.culom-img img {
+  width: 500px;
+  height: 400px;
+  margin: 0 29%;
+}
+
+figcaption {
+  margin: 0 34.2%;
+  font-size: 2rem;
+  text-transform: capitalize;
+  white-space: normal;
+  background: #8a6c6c;
+  border-radius: -10px -10px;
+}
+
+.about {
+  float: left;
+  width: 60%;
+  padding-right: 28px;
+  text-align: justify;
+}
+
+.hobbies {
+  float: left;
+  width: 20%;
+  padding: 6px 15px;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+.hobbies ul {
+  list-style: none;
+  padding: 0;
+}
+
+p, .hobbies li {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/*--- finish --*/
+
+/** Contact**/
+
+.all-contenar {
+  width: 450px;
+  height: 500px;
+  background: #c0c0c0;
+  margin: 5% auto;
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 2s ease-in-out;
+  perspective: 1000px;
+}
+
+.all-contenar:hover {
+  transform: rotatey(180deg);
+}
+
+.cont-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 5% 0 0 38%;
+}
+
+.img-auto {
+  background: #333;
+  border-radius: 10px 10px 0 0;
+  backface-visibility: hidden;
+}
+
+.front {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  text-shadow: -1px 0px 8px red;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.back {
+  font-size: 20px;
+  margin: -90% auto;
+  line-height: 4.5;
+  text-align: center;
+}
+
+.all-contenar .back {
+  transform: rotatey(180deg);
+}
+
+.back ul {
+  list-style: none;
+}
+
+.back a {
+  color: #272838;
+  text-decoration: none;
 }
